@@ -1,0 +1,57 @@
+:root {
+    --cellSize: 50px;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cellStyle {
+    background-color: #e6d6c4;
+    width: var(--cellSize);
+    height: var(--cellSize);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 30px;
+    user-select: none;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+    position: relative;
+    margin-top: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 20px;
+    background-color: #d8c1a7;
+    transition: background-color .1s;
+}
+
+button:hover {
+    background-color: #bea88e;
+}
+
+button:active {
+    background-color: #ab9377;
+}
+
+.resBlock {
+    background: linear-gradient(#d8c1a7, #ab9377);
+    width: 160px;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.turn {
+    font-size: larger;
+    margin-bottom: 5px;
+}
